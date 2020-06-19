@@ -13,9 +13,11 @@
         <div class="row">
 			<div class="col-md-12 mt-5">
 				<a href="javascript:void(0);" @click="is_active=true" class="btn btn-dark" id="js-reply">Reply</a>
+                <h5 class="text-center"><label class="badge badge-dark rounded-0 p-2">>>>>>> Scroll Down <<<<<< </label></h5>
 			</div>
 			<div class="spacer1000"></div>
 			<div class="col-md-12">
+                <h5 class="text-center"><label class="badge badge-dark rounded-0 p-2">>>>>>> Scroll Up <<<<<< </label></h5>
 				<conditional-element when-hidden="#js-reply" when-visible="">
 				    <a href="javascript:void(0);" @click="is_active=true" class="btn btn-dark rounded-circle bottom-fixed"><i class="fa fa-plus"></i></a>
 				</conditional-element>            
