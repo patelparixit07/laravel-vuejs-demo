@@ -21,7 +21,8 @@
         <div id="app">
             @include('layouts.header')
 
-            <spa-pagination-links></spa-pagination-links>            
+            <spa-pagination-links site_name="{{ config('app.name') }}">
+            </spa-pagination-links>           
             
             <transition name="fade-in" mode="out-in"> 
                 <router-view></router-view>
