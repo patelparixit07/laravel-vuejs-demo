@@ -23,6 +23,7 @@
 <script>
     export default {
         name: "spa-pagination-link",
+        props: ['site_name'],
         data() {
             return {
                 nextPage: 0,
@@ -42,7 +43,7 @@
         },
         methods: {
             getPageData() {
-                document.title = this.$route.meta.title ? this.$route.meta.title +' | VueDemo' : 'VueDemo'
+                document.title = this.$route.meta.title ? this.$route.meta.title +' | '+ this.site_name : this.site_name
                 this.nextPage = this.$route.meta.next
                 this.prevPage = this.$route.meta.prev
             }
